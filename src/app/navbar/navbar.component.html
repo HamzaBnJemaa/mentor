@@ -1,0 +1,21 @@
+<header id="header">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="logo">
+      <h1><a [routerLink]="['/']" class="logo-text">MENTOR</a></h1>
+    </div>
+
+    <nav class="navbar" [class.active]="mobileMenuOpen">
+      <ul>
+        <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li><a [routerLink]="['/about']" routerLinkActive="active">About</a></li>
+        <li><a [routerLink]="['/agents']" routerLinkActive="active">Agents</a></li>
+      </ul>
+    </nav>
+
+    <button class="get-started-btn">Get Started</button>
+
+    <button class="mobile-nav-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="mobileMenuOpen" aria-label="Toggle navigation">
+      {{ mobileMenuOpen ? '✕' : '☰' }}
+    </button>
+  </div>
+</header>

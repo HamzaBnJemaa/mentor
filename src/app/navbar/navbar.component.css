@@ -1,0 +1,135 @@
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
+}
+
+#header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .logo-text {
+  color: #5fcf80 !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #37423b;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: #5fcf80;
+}
+
+.get-started-btn {
+  margin-left: 22px;
+  background: #5fcf80;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.get-started-btn:hover {
+  background: #3ac162;
+  color: #fff;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  color: #37423b;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    left: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 0 18px rgba(55, 66, 59, 0.1);
+    gap: 15px;
+    z-index: 998;
+  }
+
+  .navbar.active ul {
+    display: flex;
+  }
+
+  .get-started-btn {
+    margin: 0;
+    padding: 6px 18px;
+    font-size: 12px;
+  }
+
+  #header .logo h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    right: 0;
+    left: 0;
+  }
+}
