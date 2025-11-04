@@ -1,0 +1,139 @@
+#why-us {
+  background-color: #f6f7f6;
+  padding: 60px 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.why-box {
+  background: #5fcf80;
+  padding: 40px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.why-box h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-box p {
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-weight: 600;
+}
+
+.more-btn:hover {
+  color: #5fcf80;
+  background: #fff;
+}
+
+.features-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  text-align: center;
+  background: #fff;
+  padding: 40px 30px;
+  border: 1px solid #eef0ef;
+  border-radius: 4px;
+}
+
+.feature-icon {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.feature-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #37423b;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.6;
+}
+
+.features-grid-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #eef0ef;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  border-color: #5fcf80;
+}
+
+.feature-box .icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.feature-box h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #37423b;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .features-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid-bottom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-top {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid-bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-box h3 {
+    font-size: 26px;
+  }
+}

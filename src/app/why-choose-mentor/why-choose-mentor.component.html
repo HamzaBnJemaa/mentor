@@ -1,0 +1,31 @@
+<section id="why-us" class="why-us">
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Choose Us</h2>
+      <p>Why Choose Mentor?</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="why-box">
+        <h3>Why Choose Mentor?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Aspernores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+        <button class="more-btn">Learn More ></button>
+      </div>
+
+      <div class="features-top">
+        <div class="feature-card" *ngFor="let feature of topFeatures">
+          <div class="feature-icon">{{ feature.icon }}</div>
+          <h4>{{ feature.title }}</h4>
+          <p>{{ feature.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-grid-bottom">
+      <div class="feature-box" *ngFor="let feature of bottomFeatures">
+        <span class="icon">{{ feature.icon }}</span>
+        <h4>{{ feature.title }}</h4>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,141 @@
+#footer {
+  color: #37423b;
+  font-size: 14px;
+  background: #eef0ef;
+}
+
+.footer-top {
+  padding: 60px 0 30px;
+  background: #f9faf9;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.footer-contact h4,
+.footer-links h4,
+.footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  color: #777777;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  padding: 8px 0;
+}
+
+.footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+}
+
+.footer-links ul a:hover {
+  color: #5fcf80;
+}
+
+.footer-newsletter form {
+  margin-top: 20px;
+  background: #fff;
+  padding: 6px 10px;
+  display: flex;
+  border-radius: 50px;
+  border: 1px solid #e0e5e2;
+}
+
+.footer-newsletter form input {
+  border: 0;
+  padding: 8px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.footer-newsletter form button {
+  background: #5fcf80;
+  color: #fff;
+  border: 0;
+  padding: 0 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.footer-newsletter form button:hover {
+  background: #3ac162;
+}
+
+.footer-bottom {
+  background: #eef0ef;
+  padding: 20px 0;
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.credits p {
+  margin: 5px 0;
+}
+
+.credits a {
+  color: #3ac162;
+}
+
+.credits a:hover {
+  color: #5fcf80;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  background: #5fcf80;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  background: #3ac162;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
