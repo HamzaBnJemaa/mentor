@@ -1,11 +1,14 @@
+/* ===== Header ===== */
 #header {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
   box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
+  position: relative;
 }
 
+/* ===== Logo ===== */
 #header .logo h1 {
   font-size: 30px;
   margin: 0;
@@ -19,25 +22,26 @@
 
 #header .logo-text {
   color: #5fcf80 !important;
+  text-decoration: none;
 }
 
+/* ===== Utilities ===== */
 .d-flex {
   display: flex;
 }
-
 .align-items-center {
   align-items: center;
 }
-
 .justify-content-between {
   justify-content: space-between;
 }
 
+/* ===== Navbar ===== */
 .navbar {
   padding: 0;
 }
 
-.navbar ul {
+.navbar > ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -46,6 +50,7 @@
   gap: 30px;
 }
 
+/* Remove underline and style main links */
 .navbar a {
   display: flex;
   align-items: center;
@@ -56,6 +61,7 @@
   color: #37423b;
   white-space: nowrap;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .navbar a:hover,
@@ -63,6 +69,86 @@
   color: #5fcf80;
 }
 
+/* ===== Dropdown Menu ===== */
+.navbar ul ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 99;
+}
+
+.navbar li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.navbar ul ul li a {
+  padding: 10px 20px;
+  color: #444;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.3s;
+  display: block;
+}
+
+.navbar ul ul li a:hover {
+  background: #f6f9ff;
+  color: #5fcf80;
+}
+
+/* ===== Hover to Show Dropdown ===== */
+.navbar .dropdown:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+/* ===== Deep Dropdown ===== */
+.navbar .dropdown .dropdown > ul {
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  left: calc(100% - 1px);
+}
+
+/* Right arrow icon for deep dropdown */
+.navbar .dropdown .dropdown > a {
+  padding-right: 35px;
+  position: relative;
+}
+
+.navbar .dropdown .dropdown > a::after {
+  content: "›";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #5fcf80;
+  font-weight: 700;
+}
+
+/* ===== Get Started Button ===== */
 .get-started-btn {
   margin-left: 22px;
   background: #5fcf80;
@@ -75,6 +161,7 @@
   border: none;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .get-started-btn:hover {
@@ -82,6 +169,7 @@
   color: #fff;
 }
 
+/* ===== Mobile Nav Toggle ===== */
 .mobile-nav-toggle {
   display: none;
   color: #37423b;
@@ -92,6 +180,7 @@
   transition: 0.5s;
 }
 
+/* ===== Responsive ===== */
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -114,6 +203,25 @@
 
   .navbar.active ul {
     display: flex;
+  }
+
+  .navbar .dropdown > ul {
+    position: static;
+    display: none;
+    background: #f8f9fa;
+    box-shadow: none;
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+
+  .navbar .dropdown.active > ul {
+    display: block;
+  }
+
+  .navbar .dropdown .dropdown > ul {
+    position: static;
+    padding-left: 20px;
+    box-shadow: none;
   }
 
   .get-started-btn {
