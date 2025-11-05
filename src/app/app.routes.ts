@@ -10,5 +10,9 @@ export const routes: Routes = [
     path: 'agents',
     loadComponent: () => import('./agents/agents.component').then(c => c.AgentsComponent)
   },
+  { 
+    path: 'trainers',
+    loadComponent: () => import('./trainers/trainers.component').then(c => c.TrainersComponent)
+  },
   { path: '**', redirectTo: 'home' }
 ];

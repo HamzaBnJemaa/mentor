@@ -1,0 +1,31 @@
+<!-- ======= Trainers Section ======= -->
+<section id="trainers" class="trainers">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Trainers</h2>
+      <p>Our Professional Trainers</p>
+    </div>
+
+    <div class="row" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" *ngFor="let trainer of trainers">
+        <div class="member">
+          <img [src]="trainer.image" class="img-fluid" [alt]="trainer.name">
+          <div class="member-content">
+            <h4>{{ trainer.name }}</h4>
+            <span>{{ trainer.role }}</span>
+            <p>
+              {{ trainer.bio }}
+            </p>
+            <div class="social">
+              <a [href]="trainer.twitter"><i class="bi bi-twitter"></i></a>
+              <a [href]="trainer.facebook"><i class="bi bi-facebook"></i></a>
+              <a [href]="trainer.instagram"><i class="bi bi-instagram"></i></a>
+              <a [href]="trainer.linkedin"> <i class="bi bi-linkedin"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Trainers Section -->
