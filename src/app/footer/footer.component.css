@@ -44,6 +44,7 @@
 .footer-links ul a {
   color: #777777;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .footer-links ul a:hover {
