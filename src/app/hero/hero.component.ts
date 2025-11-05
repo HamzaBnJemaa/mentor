@@ -1,10 +1,11 @@
 import { Component } from "@angular/core"
 import { CommonModule } from "@angular/common"
+import { WhyChooseMentorComponent } from "../why-choose-mentor/why-choose-mentor.component"
 
 @Component({
   selector: "app-hero",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WhyChooseMentorComponent],
   templateUrl: "./hero.component.html",
   styleUrls: ["./hero.component.css"],
 })

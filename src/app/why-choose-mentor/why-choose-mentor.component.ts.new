@@ -1,0 +1,53 @@
+import { Component, AfterViewInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+declare var AOS: any;
+
+interface Feature {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+@Component({
+  selector: 'app-why-choose-mentor',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './why-choose-mentor.component.html',
+  styleUrls: ['./why-choose-mentor.component.css']
+})
+export class WhyChooseMentorComponent implements AfterViewInit {
+  features: Feature[] = [
+    {
+      icon: 'bi bi-receipt',
+      title: 'Corporis voluptates sit',
+      description: 'Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip'
+    },
+    {
+      icon: 'bi bi-cube',
+      title: 'Ullamco laboris',
+      description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt'
+    },
+    {
+      icon: 'bi bi-images',
+      title: 'Labore consequatur',
+      description: 'Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere'
+    },
+    {
+      icon: 'bi bi-shield',
+      title: 'Beatae veritatis',
+      description: 'Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta'
+    }
+  ];
+
+  ngAfterViewInit(): void {
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    }
+  }
+}

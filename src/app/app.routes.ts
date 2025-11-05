@@ -7,6 +7,10 @@ export const routes: Routes = [
     loadComponent: () => import('./hero/hero.component').then(c => c.HeroComponent)
   },
   { 
+    path: 'about',
+    loadComponent: () => import('./about/about.component').then(c => c.AboutComponent)
+  },
+  { 
     path: 'agents',
     loadComponent: () => import('./agents/agents.component').then(c => c.AgentsComponent)
   },

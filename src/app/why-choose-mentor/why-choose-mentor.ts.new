@@ -51,8 +51,7 @@ export class WhyChooseMentorComponent implements AfterViewInit {
     { icon: '🔐', title: 'Pira Neve' },
     { icon: '⚓', title: 'Dirada Pack' },
     { icon: '🎯', title: 'Moton Ideal' },
-    { icon: '📻', title: 'Verdo Park' },
-    { icon: '🌿', title: 'Flavor Nivel' }
+    { icon: '📻', title: 'Verdo Park' }
   ];
 
   ngAfterViewInit(): void {
