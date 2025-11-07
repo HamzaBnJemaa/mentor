@@ -56,16 +56,6 @@ export class WhyChooseMentorComponent implements AfterViewInit {
     { icon: 'ri-fingerprint-line', title: 'Flavor Nivelanda' }
   ];
 
-  // Icon colors matching the original template
-  getIconColor(index: number): string {
-    const colors = [
-      '#ffbb2c', '#5578ff', '#e80368', '#e361ff',
-      '#47aeff', '#ffa76e', '#11dbcf', '#4233ff',
-      '#b2904f', '#b20969', '#ff5828', '#29cc61'
-    ];
-    return colors[index % colors.length];
-  }
-
   ngAfterViewInit(): void {
     if (typeof AOS !== 'undefined') {
       AOS.init({

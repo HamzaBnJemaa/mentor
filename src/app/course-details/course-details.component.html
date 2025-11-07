@@ -1,0 +1,25 @@
+<section class="course-details">
+  <div class="header">
+    <h2>Course Details</h2>
+    <p>Explore detailed information about each course.</p>
+  </div>
+
+  <div class="container mt-5" *ngIf="course$ | async as course">
+    <div class="details-grid">
+      <div class="image-section">
+        <img [src]="course.image" [alt]="course.title" />
+      </div>
+      <div class="info-section">
+        <h3>{{ course.title }}</h3>
+        <p class="description">{{ course.descriptionLong }}</p>
+        <div class="info-table">
+          <div><strong>Instructor:</strong> {{ course.instructor }}</div>
+          <div><strong>Category:</strong> {{ course.category }}</div>
+          <div><strong>Price:</strong> ${{ course.price }}</div>
+          <div><strong>Students:</strong> {{ course.students }}</div>
+          <div><strong>Duration:</strong> {{ course.duration }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
