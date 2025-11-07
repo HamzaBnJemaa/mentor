@@ -1,0 +1,79 @@
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>ESI dolorum ut non facere pessimus quibussiam eugenia voluptatem. Quis id aut similique quis voluptate sit quaterd doloies. Nerum omnis ipsum aperiam consequatur. Isoortosam nerun herum presentatum.</p>
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-lg-6">
+          <img src="assets/about.jpg" class="img-fluid" alt="About Us">
+        </div>
+        
+        <!-- Content Column -->
+        <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+          </ul>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          </p>
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts section-bg">
+    <div class="container">
+      <div class="row counters">
+        <div class="col-lg-3 col-6 text-center" *ngFor="let stat of stats">
+          <span class="counter" [attr.data-target]="stat.count">{{stat.count}}</span>
+          <p>{{stat.label}}</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Counts Section -->
+
+ <!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Testimonials</h2>
+      <p>What are they saying</p>
+    </div>
+
+    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let testimonial of testimonials">
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img [src]="testimonial.image" class="testimonial-img" [alt]="testimonial.name">
+              <h3>{{testimonial.name}}</h3>
+              <h4>{{testimonial.position}}</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                {{testimonial.text}}
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section><!-- End Testimonials Section -->
+</main>
