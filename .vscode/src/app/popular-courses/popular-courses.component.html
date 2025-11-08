@@ -1,0 +1,35 @@
+<section id="courses" class="courses">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Courses</h2>
+      <p>Popular Courses</p>
+    </div>
+
+    <div class="courses-grid">
+      <div class="course-item" *ngFor="let course of courses">
+        <img [src]="course.image" [alt]="course.title" class="course-image">
+        
+        <div class="course-content">
+          <div class="course-meta">
+            <span class="category" [ngClass]="course.category.toLowerCase().replace(' ', '-')">{{ course.category }}</span>
+            <span class="price">{{ course.price }}</span>
+          </div>
+          
+          <h3>{{ course.title }}</h3>
+          <p class="course-description">{{ course.description }}</p>
+
+          <div class="course-trainer">
+            <div class="trainer-profile">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" [alt]="course.instructor" class="trainer-img">
+              <span class="trainer-name">{{ course.instructor }}</span>
+            </div>
+            <div class="trainer-stats">
+              <span class="stat">👥 {{ course.students }}</span>
+              <span class="stat">❤️ {{ course.likes }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
