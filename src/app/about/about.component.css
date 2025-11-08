@@ -1,0 +1,504 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  padding: 60px 0;
+}
+
+.about .container {
+  max-width: 1140px;
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.about .row.align-items-center {
+  align-items: center !important;
+}
+
+.about .col-lg-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.about img.img-fluid {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.about img.img-fluid:hover {
+  transform: scale(1.02);
+}
+
+/* Content now on left - padding on right */
+.about .content {
+  padding-right: 30px;
+}
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+
+.about .content .fst-italic {
+  font-style: italic !important;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.about .content ul li {
+  padding: 8px 0;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 12px;
+  color: #5fcf80;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.about .content p:last-of-type {
+  color: #444;
+  line-height: 1.8;
+  margin: 25px 0 0 0;
+  font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+/* Remove any potential margin from body or other elements */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs {
+  padding: 80px 0 60px;
+  background: #5fcf80;
+  color: #fff;
+  margin-top: 0;
+}
+
+/* Ensure navbar doesn't create extra space */
+.navbar {
+  margin-bottom: 0;
+}
+
+.breadcrumbs h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0 auto 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 800px;
+  padding: 0 15px;
+}
+
+.breadcrumbs p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.95);
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/*--------------------------------------------------------------
+# Counts Section - Fixed Horizontal Layout
+--------------------------------------------------------------*/
+.counts {
+  padding: 80px 0;
+  background: #f6f7f6;
+}
+
+.counts .container {
+  max-width: 1140px;
+}
+
+.counts .row.counters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.counts .counters > div {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.counts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #5fcf80;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #37423b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Counter animation */
+.counter {
+  font-size: 48px;
+  font-weight: 700;
+  color: #5fcf80;
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+  padding: 60px 0;
+}
+
+.testimonials .testimonial-wrap {
+  padding-left: 50px;
+}
+
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 30px 15px;
+  min-height: 200px;
+  border: 1px solid #eef0ef;
+  position: relative;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  position: static;
+  margin: -70px auto 20px auto;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 15px 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #c1ecce;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  line-height: 1.6;
+}
+
+/* Swiper Styles */
+.testimonials .swiper-wrapper {
+  display: flex;
+}
+
+.testimonials .swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #5fcf80;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #5fcf80;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f7f6;
+}
+
+.section-title {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #37423b;
+}
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 63px;
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 28px;
+  }
+  
+  .about .content {
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+  
+  .counts .counters > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .about .content {
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+  
+  .about .content .learn-more-btn {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+  }
+  
+  .counts .counters span {
+    font-size: 36px;
+  }
+  
+  .section-title p {
+    font-size: 28px;
+  }
+  
+  .testimonials .testimonial-wrap {
+    padding-left: 0;
+  }
+
+  .testimonials .testimonials-slider {
+    overflow: hidden;
+  }
+
+  .testimonials .testimonial-item {
+    padding: 30px;
+    margin: 15px;
+  }
+
+  .testimonials .testimonial-item .testimonial-img {
+    position: static;
+    margin: -70px auto 20px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials .testimonial-item {
+    flex: 1 1 100%;
+  }
+  
+  .counts .counters > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .about .content h3 {
+    font-size: 22px;
+  }
+  
+  .counts .counters span {
+    font-size: 32px;
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 32px;
+  }
+  
+  .breadcrumbs p {
+    font-size: 16px;
+  }
+}
+
+/* Utility classes */
+.fst-italic {
+  font-style: italic !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pt-4 {
+  padding-top: 1.5rem !important;
+}
+
+.pt-lg-0 {
+  padding-top: 0 !important;
+}
+
+/* Additional utility classes for spacing */
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+/* Smooth transitions for all interactive elements */
+.testimonial-item,
+.counts .counters > div,
+.about img.img-fluid {
+  transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+.testimonial-item:focus,
+.counts .counters > div:focus {
+  outline: 2px solid #5fcf80;
+  outline-offset: 2px;
+}
+
+/* Loading states */
+.counter {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
