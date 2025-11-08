@@ -1,0 +1,26 @@
+<section id="trainers" class="trainers">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Team</h2>
+      <p>Meet Our Agents</p>
+    </div>
+
+    <div class="trainers-grid">
+      <div class="member" *ngFor="let agent of agents">
+        <img [src]="agent.image" [alt]="agent.name" class="member-image">
+        
+        <div class="member-content">
+          <h4>{{ agent.name }}</h4>
+          <span class="member-title">{{ agent.title }}</span>
+          <p>{{ agent.bio }}</p>
+          
+          <div class="social">
+            <a href="#" *ngFor="let social of agent.social" class="social-link">
+              {{ social.icon }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
