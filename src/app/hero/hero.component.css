@@ -1,12 +1,14 @@
 #hero {
   width: 100%;
   height: 80vh;
-background: url("/assets/hero-bg.jpg") center / cover;
+  background: url("/assets/hero-bg.jpg") center / cover;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0 0 0 300px;
 }
+
 
 #hero::before {
   content: "";
@@ -24,21 +26,33 @@ background: url("/assets/hero-bg.jpg") center / cover;
   z-index: 2;
   color: #fff;
   text-align: left;
+  max-width: 600px;
+  margin: 0;
+  padding: 20px;
 }
+
 
 .hero-content h1 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 1.2;
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .hero-content p {
   color: #eee;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 30px;
+  line-height: 1.5;
+  font-weight: 300;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .btn-outline {
