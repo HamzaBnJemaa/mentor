@@ -14,7 +14,7 @@ export class TrainersComponent {
   trainers = [
     {
       id: 1,
-      name: 'Waaaaaaaaalter White',
+      name: 'Walter White',
       role: 'Web Development',
       bio: 'Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut',
       twitter: '#',
