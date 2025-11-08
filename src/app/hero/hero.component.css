@@ -9,6 +9,7 @@
   padding: 0 0 0 300px;
 }
 
+
 #hero::before {
   content: "";
   background: rgba(0, 0, 0, 0.256);
