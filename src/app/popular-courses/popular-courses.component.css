@@ -3,6 +3,26 @@
   background-color: #fff;
 }
 
+.section-title {
+  text-align: center;
+  padding: 20px;
+  background-color: #5fcf80; /* Green background */
+  color: white; /* White text */
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  color: white; /* Ensures the heading is white */
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for the subtitle */
+  margin: 0;
+  font-style: italic;
+}
+
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

@@ -1,20 +1,81 @@
 /*--------------------------------------------------------------
 # Courses - Clean Flat Version
 --------------------------------------------------------------*/
+.section-title {
+  background-color: #5fcf80;
+  color: white;
+  padding: 60px 20px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title h2 {
+  color: white;
+  margin: 0 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #fff;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.section-title p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  font-style: normal;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.courses {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.courses .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.courses .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
 .courses .course-item {
   border: 1px solid #e0e0e0;
-  border-radius: 0; /* 90° corners */
+  background: #fff;
+  border-radius: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: none; /* remove hover transition */
-  margin-bottom: 0;
-  box-shadow: none;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .courses .course-item:hover {
-  box-shadow: none;
-  transform: none; /* remove hover motion */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .courses .course-item img {
@@ -22,10 +83,11 @@
   height: 200px;
   object-fit: cover;
   border-radius: 0;
+  display: block;
 }
 
 .courses .course-content {
-  padding: 18px;
+  padding: 25px;
   flex: 1;
   display: flex;
   flex-direction: column;

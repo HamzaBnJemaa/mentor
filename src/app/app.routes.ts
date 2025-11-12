@@ -27,17 +27,17 @@ export const routes: Routes = [
     path: 'course-details/:id',
     loadComponent: () => import('./course-details/course-details.component').then(c => c.CourseDetailsComponent)
   },
-
   {
     path: 'events',
     loadComponent: () => import('./event/events.component').then(c => c.EventsComponent)
   },
-
-  // ✅ Added Pricing component
   {
     path: 'pricing',
     loadComponent: () => import('./pricing/pricing.component').then(c => c.PricingComponent)
   },
-
+  {
+    path: 'contact',
+    loadComponent: () => import('./contact/contact.component').then(c => c.ContactComponent)
+  },
   { path: '**', redirectTo: 'home' }
 ];
