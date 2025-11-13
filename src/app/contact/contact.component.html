@@ -9,8 +9,11 @@
   <!-- End Breadcrumbs -->
 
   <!-- ======= Map Section ======= -->
-  <div class="map-section">
-    <div class="container">
+  <section class="map-section">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+
+      </div>
       <div class="map-container">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007!5e0!3m2!1sen!2sus!4v1642022070010!5m2!1sen!2sus" 
@@ -22,7 +25,7 @@
         </iframe>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
@@ -33,7 +36,7 @@
           <div class="contact-info">
             <div class="info-item">
               <div class="info-label">
-                <i class="bi bi-geo-alt"></i>
+                <mat-icon class="info-icon">location_on</mat-icon>
                 <h4>Location:</h4>
                 <p>A108 Adam Street, NY 535022</p>
               </div>
@@ -51,9 +54,27 @@
 
             <div class="info-item">
               <div class="info-label">
-                <i class="bi bi-envelope"></i>
+                <mat-icon class="info-icon">email</mat-icon>
                 <h4>Email:</h4>
                 <p>info@example.com</p>
+              </div>
+              <div class="form-field">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  formControlName="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-label">
+                <mat-icon class="info-icon">call</mat-icon>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55</p>
               </div>
               <div class="form-field">
                 <input
@@ -66,33 +87,22 @@
                 />
               </div>
             </div>
+          </div>
 
-            <div class="info-item">
-              <div class="info-label">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55</p>
-              </div>
-              <div class="form-field">
-                <textarea
-                  class="form-control"
-                  formControlName="message"
-                  rows="4"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
+          <div class="form-fields">
+            <div class="form-field">
+              <textarea
+                class="form-control"
+                formControlName="message"
+                rows="4"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="submit-btn">Send Message</button>
             </div>
           </div>
-        </div>
-
-        <div class="form-actions">
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
         </div>
       </form>
     </div>
